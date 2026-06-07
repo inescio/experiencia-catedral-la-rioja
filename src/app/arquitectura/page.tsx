@@ -24,8 +24,8 @@ const sections = [
     body: "La fachada principal se erige como una obra maestra de la sobriedad monumental. Sin ornamentación excesiva, confía en la pura geometría de sus proporciones neoclásicas para imponer presencia. El juego de luz y sombra sobre la robusta mampostería de piedra crea un ritmo visual dinámico que cambia a lo largo del día.",
     cta: "Explorar detalles estructurales",
     image: {
-      src: "https://lh3.googleusercontent.com/aida/AP1WRLuToZMfvkEnEsPliQKyfFmHMIqiPy04WEcwPAiPOLkiB93eKs2eXMSBdHdgFif742bJfPB1POyYsQz5Q7aFZOUEDPfrRc_4Iy2rjGKw63GPJCuYWW6DjJk5AjIn5snu3C8a_5W1WkK1emlmZMUeqJKp5doPiV1k6BOOtlOP1j2fH5n9JyCkZfkfUGjQOUr7rzQDCMVaPVkDP7Fk3f4xudcBTLc0VBwwJnYtcRWJjbQEG716wS3njG1lYiw",
-      alt: "Detalle de la fachada neoclásica de la Catedral con columnas y arco de entrada",
+      src: "/CATEDRAL3.jpg",
+      alt: "Fachada neoclásica de la Catedral Basílica de La Rioja con cielo azul despejado",
       aspect: "aspect-[4/5]",
     },
     layout: "image-left",
@@ -37,8 +37,8 @@ const sections = [
     body: "Alzándose sobre la ciudad, las torres gemelas de campanario sirven como anclas estructurales y faros espirituales. La mampostería aquí se vuelve más liviana y perforada, permitiendo que el viento pase por los arcos donde residen las campanas de bronce, enmarcando el cielo en elegantes siluetas.",
     cta: null,
     image: {
-      src: "https://lh3.googleusercontent.com/aida/AP1WRLsCF2jQc-r4M-R0WcYr-ft6v0Fbz3_6fXrrSQPd8CgQBWhZOZKTjpBtFdCd6ul-bxdZfR7AkTBPBEezWy20scmrp90-VcRj7aqJKR0DRkVqYkwTwqICqDZnPGLO4ne53DQcsE7EOwiNc8bXcXhrs4KlNkZGNdHVGH6kgimgxpprza15Lpt75pUa9Ml4agqAJTouPi-Mr8w1C-r6E4O2DzliTx6VqaJzsOgHzX45qwSiLgs_En4Oa51spQ",
-      alt: "Vista vertical del campanario de la Catedral contra el cielo despejado",
+      src: "/CATEDRAL4.jpg",
+      alt: "Vista lateral de la cúpula y campanarios de la Catedral de La Rioja",
       aspect: "aspect-square md:aspect-[3/4]",
     },
     layout: "image-right",
@@ -50,8 +50,8 @@ const sections = [
     body: "En contraste con el estoico exterior, los acentos interiores utilizan pan de oro para atraer la mirada y reflejar la escasa luz en las naves más profundas. Estas sutiles intervenciones actúan como signos de puntuación dentro del vasto volumen de la catedral, resaltando relieves escultóricos clave y retablos.",
     cta: null,
     image: {
-      src: "https://lh3.googleusercontent.com/aida/AP1WRLtVufTrwrTMbjkhykElMlgSY0v80ITHhuo97iApR9wj_rLiwxjbcyRHgeALndaMRp-XkFnPTTq37MvWvITdXexErr4Rv3sXwlDvCCGDvJRLp5EMhKb6BuE7okN4b8mfas-dCjxO4KSKCUrX3DlRc-SujZvkuzZv9qxMZEmP3-afq07P1EJR7TDVlvDcqY0S5rP3TY1IBYPblWjrc6SU-j1_ODjaa-llwNHlQiqXK5fKMs5k1IzP578ySig",
-      alt: "Macro detalle de elementos escultóricos dorados integrados en madera antigua y piedra",
+      src: "/CATEDRAL2.jpg",
+      alt: "Catedral de La Rioja iluminada de noche durante un evento cultural en la plaza",
       aspect: "aspect-[16/9] md:aspect-[4/3]",
     },
     layout: "overlay-card",
@@ -79,8 +79,8 @@ export default function ArquitecturaPage() {
       <section className="relative w-full h-[55vh] md:h-[65vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://lh3.googleusercontent.com/aida/AP1WRLvxTAibMa4kARGOGgNBDpbpFdwRxFS9U8jQe_nfvA0WEyc4BthuNy4yABCW27Q3fBNFBlddYw2JWORYrq718jzPDPDuScwu-O72bnsy96Rr5q-g9Ga1KAoI5ksF2r3C14Ow61Moym6d8tJjky9wOnaZFs8mlnfQa9wy2FKkszm6PlMZcI7VMP7GXX0h_jb3StjA4kXJCsFefkSzE0bdlS6suluNBz4Zxqr0v3jrMHH4AC6eJ8svZew6pQ"
-            alt="Catedral de La Rioja al atardecer"
+            src="/CATEDRAL1.jpg"
+            alt="Fachada de la Catedral de La Rioja con visitantes en primer plano"
             fill
             priority
             className="object-cover object-center"

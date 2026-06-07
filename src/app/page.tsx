@@ -19,8 +19,8 @@ export default function HomePage() {
       <section className="relative h-screen w-full flex items-end justify-center pb-32">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Image
-            src="https://lh3.googleusercontent.com/aida/AP1WRLv2zgQHcQRNURukhFlpcanzwlcFUznfwsEZJ0zkxQutVg6_lIynvqgc_Wmsw7qn1nFGk61zQkbC_1Ysj07Vjf_LNGtVyWaWvDNwEyi15b4TovRy06RbR--EHrv6iIKus0jxq3S8xgHwAMcvMXmWIVihuySQw7_tt7YbAVaH6O26bZnLLON78EN7XoD2WcqCwfwelhu6vVNWnfd7l1pYnaQsC1bFdn4MQIICB1vpbjOj5eZBhT5b_Wiu8Qo"
-            alt="Vista aérea de la Catedral de La Rioja al atardecer"
+            src="/CATEDRAL2.jpg"
+            alt="Catedral de La Rioja iluminada de noche durante un evento en la plaza"
             fill
             priority
             className="object-cover object-center"
@@ -117,8 +117,8 @@ export default function HomePage() {
             <div className="absolute -inset-4 border border-outline-variant/50 rounded-xl translate-x-4 translate-y-4 -z-10" />
             <div className="rounded-xl overflow-hidden soft-shadow aspect-[4/5] relative">
               <Image
-                src="https://lh3.googleusercontent.com/aida/AP1WRLtnKGsfqQeNk2a-mOuXMlMl3Jttpjl46ES5y-KCGnGaihU_qYxUtoadiuyCCWFw6EqgxZYFhuZgLJj7B7TAJcvJ3vf89EDnoycWaq1bixYLgIzZDICMhXYklZgHo4BJpFsP_PT1kBVdX6fq9xcj28AkaantEq2pZba7KeHeFDUPyswWShXolvABpvCmXTbdw7TXtoZB3xwSh3ceXXs9iCk1VLN-ozcUpyJkpzncNLgNmSHTJA4OJDHkW3s"
-                alt="Detalle de columna interior de la Catedral con luz natural filtrando"
+                src="/CATEDRAL1.jpg"
+                alt="Fachada de la Catedral de La Rioja durante el día con visitantes en primer plano"
                 fill
                 className="object-cover"
               />

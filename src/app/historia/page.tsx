@@ -23,8 +23,8 @@ const timelineEvents = [
     description:
       "Los primeros cimientos fueron establecidos por misioneros, utilizando adobe y madera local. Una estructura modesta que sirvió como el primer centro de fe en la región.",
     image: {
-      src: "https://lh3.googleusercontent.com/aida/AP1WRLtiXYRhIaa6XjPmOHBSSMk2WSbhe6V4oAnieogi27vyj-O3eJ0y52TG0LZmqc0pq0JFYpCbOoOA4oPvcLChe0GIItnW2leiUgBwB5iMeFoEgu0oqYjvCsNT3CL9DJGTonsOKZt7YDyp2qTts-VmFbFzMR5Ch7MDIFMNJnnGI7Uu1urK8y4A50kYZYo7S81UAEo5ot4ofiMVuycZxPyBPTFzkXYc1h44gRRWYGEttXVG8VTiHgBef1wYqg",
-      alt: "Pintura antigua mostrando la primera estructura de la iglesia colonial en adobe y madera",
+      src: "/CATEDRAL3.jpg",
+      alt: "Fachada frontal de la Catedral Basílica de La Rioja durante el día con cielo despejado",
     },
     align: "right",
   },
@@ -34,8 +34,8 @@ const timelineEvents = [
     description:
       "Bajo la dirección del arquitecto principal, comenzó la edificación monumental en piedra de cantera. La fachada principal y las naves tomaron su forma definitiva de estilo neoclásico.",
     image: {
-      src: "https://lh3.googleusercontent.com/aida/AP1WRLuXalJyjiEtM6NYY4zgPv8n5pJZcj9kDha_jf4m-dID_s2j1Pd4PMM6ALoEpgxcV3JXRT2PCJm2omX0ZzYvUEcVLMTkiblX3qC2RXb2h0ZLeQkJP_n1kkqeNlWJMrXDE7oEMdC_8YFOEVOnIlTthb4OCRuQI2efiwjSn5j5iMwMTWNpwjRMqtW6BfCrCzYURkrAkqXQF1Kf4NURCQWvCeALD0V_eW7qa9o52zSj4",
-      alt: "Detalle de la fachada neoclásica en piedra durante la puesta de sol",
+      src: "/CATEDRAL4.jpg",
+      alt: "Vista lateral de la cúpula y campanarios de la Catedral de La Rioja",
     },
     align: "left",
   },

@@ -90,8 +90,8 @@ export default function VisitaPage() {
           <div className="w-full h-64 md:h-[530px] rounded-xl overflow-hidden relative soft-shadow group">
             <div className="absolute inset-0 bg-deep-slate/20 group-hover:bg-deep-slate/10 transition-colors duration-700 z-10" />
             <Image
-              src="https://lh3.googleusercontent.com/aida/AP1WRLtQOGa0hxutkglXOMCK529zLAp135Vm39SHd6IBjy4WCHAgOQucaRY6uxKlKE9T-Ks95l4fO3Q7QksbDvzQWUuBwr3zqGGL1s-v2wD5MrZzxyfO7mdlktoenUB3ulq1E8YgnXIp0_8KljftNiwRDR8eYEYMgdOb1yYe2-hmMjXYy28ql7Ero5NQAwHnNnZW4F87CoinLMD_jq-E3U_LdJMyt0wI9CBBtEad2Ik6YY4u0eHD-7IH2j0yFso"
-              alt="Puertas principales de la Catedral iluminadas por luz dorada de atardecer"
+              src="/CATEDRAL2.jpg"
+              alt="Catedral de La Rioja iluminada de noche durante un evento en la plaza"
               fill
               priority
               className="object-cover transform scale-100 group-hover:scale-105 transition-transform duration-[20s] ease-out"
