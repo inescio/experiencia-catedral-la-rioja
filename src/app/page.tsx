@@ -1,65 +1,196 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import JsonLd, { touristAttractionSchema } from "@/components/JsonLd";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Experiencia Catedral La Rioja",
+  description:
+    "Descubrí la Catedral Basílica de San Nicolás de Bari de La Rioja. Historia, arquitectura, fe y un recorrido inmersivo por uno de los monumentos más importantes de Argentina.",
+  alternates: { canonical: "/" },
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      <JsonLd data={touristAttractionSchema} />
+
+      {/* ── Hero Section with parallax ── */}
+      <section className="relative h-screen w-full flex items-end justify-center pb-32">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <Image
+            src="https://lh3.googleusercontent.com/aida/AP1WRLv2zgQHcQRNURukhFlpcanzwlcFUznfwsEZJ0zkxQutVg6_lIynvqgc_Wmsw7qn1nFGk61zQkbC_1Ysj07Vjf_LNGtVyWaWvDNwEyi15b4TovRy06RbR--EHrv6iIKus0jxq3S8xgHwAMcvMXmWIVihuySQw7_tt7YbAVaH6O26bZnLLON78EN7XoD2WcqCwfwelhu6vVNWnfd7l1pYnaQsC1bFdn4MQIICB1vpbjOj5eZBhT5b_Wiu8Qo"
+            alt="Vista aérea de la Catedral de La Rioja al atardecer"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+          <div className="absolute inset-0 scrim-overlay z-[1]" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 text-center px-6 md:px-16 max-w-4xl mx-auto flex flex-col items-center">
+          <span
+            className="text-gold-leaf tracking-[0.2em] uppercase text-label-sm font-label-sm mb-4 block opacity-0 translate-y-4 animate-fade-up"
+            style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
+          >
+            Experiencia Inmersiva
+          </span>
+          <h1
+            className="text-display-lg-mobile font-headline-lg-mobile md:text-display-lg md:font-headline-lg text-white mb-6 drop-shadow-lg opacity-0 translate-y-4 animate-fade-up"
+            style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
+          >
+            Catedral de La Rioja
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p
+            className="text-body-lg font-body-lg text-antique-white max-w-2xl mx-auto mb-12 opacity-0 translate-y-4 animate-fade-up"
+            style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
+          >
+            Un encuentro con la historia y la fe
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <div
+            className="opacity-0 translate-y-4 animate-fade-up"
+            style={{ animationDelay: "0.8s", animationFillMode: "forwards" }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <Link
+              href="#intro"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-tuscan-sun text-deep-slate text-label-lg font-label-lg rounded hover:bg-gold-leaf transition-colors duration-300 group"
+            >
+              Comenzar Recorrido
+              <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
+                arrow_forward
+              </span>
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-70 animate-bounce text-white z-10">
+          <span className="text-[10px] tracking-widest uppercase mb-2">Scroll</span>
+          <span className="material-symbols-outlined text-[16px]">expand_more</span>
+        </div>
+      </section>
+
+      {/* ── Introduction Section ── */}
+      <section
+        id="intro"
+        className="py-section-gap px-6 md:px-16 bg-antique-white relative overflow-hidden"
+      >
+        {/* Timeline rail top */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-24 bg-gold-leaf opacity-30" />
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+          {/* Text */}
+          <div className="md:col-span-5 md:col-start-2 order-2 md:order-1 flex flex-col space-y-6">
+            <div className="flex items-center space-x-4 mb-4">
+              <div className="w-8 h-[1px] bg-gold-leaf" />
+              <span className="text-label-sm font-label-sm text-gold-leaf tracking-widest uppercase">
+                El Legado
+              </span>
+            </div>
+            <h2 className="text-headline-lg-mobile font-headline-lg-mobile md:text-headline-lg md:font-headline-lg text-deep-slate">
+              Una joya arquitectónica que narra siglos de devoción.
+            </h2>
+            <p className="text-body-md font-body-md text-on-surface-variant leading-relaxed opacity-80">
+              Descubrí los secretos mejor guardados de la Catedral. Desde sus imponentes
+              campanarios hasta los detalles sutiles de su altar mayor, cada rincón de
+              este recinto sagrado cuenta una historia de resiliencia, arte y fe
+              inquebrantable.
+            </p>
+            <div className="pt-6">
+              <Link
+                href="/historia"
+                className="group inline-flex items-center gap-2 text-label-lg font-label-lg text-deep-slate hover:text-gold-leaf transition-colors duration-300"
+              >
+                <span className="pb-1 border-b border-gold-leaf/30 group-hover:border-gold-leaf transition-colors">
+                  Conocer la Historia
+                </span>
+                <span className="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">
+                  east
+                </span>
+              </Link>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="md:col-span-5 md:col-start-8 order-1 md:order-2 relative">
+            <div className="absolute -inset-4 border border-outline-variant/50 rounded-xl translate-x-4 translate-y-4 -z-10" />
+            <div className="rounded-xl overflow-hidden soft-shadow aspect-[4/5] relative">
+              <Image
+                src="https://lh3.googleusercontent.com/aida/AP1WRLtnKGsfqQeNk2a-mOuXMlMl3Jttpjl46ES5y-KCGnGaihU_qYxUtoadiuyCCWFw6EqgxZYFhuZgLJj7B7TAJcvJ3vf89EDnoycWaq1bixYLgIzZDICMhXYklZgHo4BJpFsP_PT1kBVdX6fq9xcj28AkaantEq2pZba7KeHeFDUPyswWShXolvABpvCmXTbdw7TXtoZB3xwSh3ceXXs9iCk1VLN-ozcUpyJkpzncNLgNmSHTJA4OJDHkW3s"
+                alt="Detalle de columna interior de la Catedral con luz natural filtrando"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Timeline rail bottom */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[1px] h-24 bg-gold-leaf opacity-30" />
+      </section>
+
+      {/* ── Quick Access Cards ── */}
+      <section className="py-section-gap px-6 md:px-16 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-label-sm font-label-sm text-gold-leaf tracking-widest uppercase">
+              Explorá
+            </span>
+            <h2 className="mt-3 text-headline-lg-mobile font-headline-lg-mobile md:text-headline-lg md:font-headline-lg text-deep-slate">
+              Todo sobre la Catedral
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {[
+              {
+                href: "/historia",
+                icon: "history_edu",
+                title: "Historia",
+                desc: "Desde 1560 hasta el presente. Siglos de fe, construcción y patrimonio.",
+              },
+              {
+                href: "/arquitectura",
+                icon: "account_balance",
+                title: "Arquitectura",
+                desc: "Fachada neoclásica, campanarios y detalles en oro que desafían el tiempo.",
+              },
+              {
+                href: "/visita",
+                icon: "calendar_month",
+                title: "Planificar visita",
+                desc: "Horarios, ubicación y normas de convivencia para tu recorrido.",
+              },
+            ].map(({ href, icon, title, desc }) => (
+              <Link
+                key={href}
+                href={href}
+                className="group bg-antique-white border border-outline-variant/50 p-8 rounded-lg soft-shadow hover:-translate-y-1 hover:border-gold-leaf transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-6 group-hover:bg-tuscan-sun/20 transition-colors duration-300">
+                  <span className="material-symbols-outlined text-gold-leaf text-[24px]">
+                    {icon}
+                  </span>
+                </div>
+                <h3 className="font-headline-md text-headline-md text-deep-slate mb-2">
+                  {title}
+                </h3>
+                <p className="text-body-md font-body-md text-on-surface-variant text-sm leading-relaxed">
+                  {desc}
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-gold-leaf text-label-lg font-label-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  Ver más
+                  <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Spacer for mobile bottom nav */}
+      <div className="h-20 md:h-0" />
+    </>
   );
 }
