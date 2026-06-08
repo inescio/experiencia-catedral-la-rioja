@@ -1,83 +1,94 @@
 @import "tailwindcss";
 
 /* ──────────────────────────────────────────────
-   Sacred Editorial — Design Tokens (Tailwind v4)
+   Experiencia Catedral 2026 — Design Tokens
+   Manual de Identidad Visual · La Rioja
    ────────────────────────────────────────────── */
 @theme {
-  /* Palette */
-  --color-antique-white: #FDFBF7;
-  --color-tuscan-sun: #D4AF37;
-  --color-gold-leaf: #C5A028;
-  --color-deep-slate: #2F2F2F;
+  /* ── Paleta de marca ── */
+  --color-tierra-oscuro: #2E2B1A;
+  --color-muro-catedral: #C8A96E;
+  --color-gris-cupula: #A09483;
+  --color-blanco-moldura: #F2EDD4;
+  --color-purpura-episcopal: #5C2D7A;
 
-  --color-surface: #fbf9f5;
-  --color-surface-dim: #dbdad6;
-  --color-surface-bright: #fbf9f5;
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f5f3ef;
-  --color-surface-container: #efeeea;
-  --color-surface-container-high: #eae8e4;
-  --color-surface-container-highest: #e4e2de;
-  --color-surface-variant: #e4e2de;
-  --color-surface-tint: #735c00;
+  /* Aliases de compatibilidad (clases utilitarias existentes) */
+  --color-antique-white: #F2EDD4;
+  --color-tuscan-sun: #C8A96E;
+  --color-gold-leaf: #B8975E;
+  --color-deep-slate: #2E2B1A;
 
-  --color-on-surface: #1b1c1a;
-  --color-on-surface-variant: #4d4635;
-  --color-on-background: #1b1c1a;
-  --color-background: #fbf9f5;
+  /* ── Escala de superficie (crema cálida / Blanco Moldura) ── */
+  --color-surface: #F2EDD4;
+  --color-surface-dim: #E8E3C8;
+  --color-surface-bright: #FAF7EC;
+  --color-surface-container-lowest: #FDFAF0;
+  --color-surface-container-low: #F7F4E4;
+  --color-surface-container: #F2EDD4;
+  --color-surface-container-high: #EDE8C4;
+  --color-surface-container-highest: #E8E3BB;
+  --color-surface-variant: #E8E3C8;
+  --color-surface-tint: #C8A96E;
 
-  --color-primary: #735c00;
-  --color-on-primary: #ffffff;
-  --color-primary-container: #d4af37;
-  --color-on-primary-container: #554300;
-  --color-primary-fixed: #ffe088;
-  --color-primary-fixed-dim: #e9c349;
-  --color-on-primary-fixed: #241a00;
-  --color-on-primary-fixed-variant: #574500;
-  --color-inverse-primary: #e9c349;
+  --color-on-surface: #2E2B1A;
+  --color-on-surface-variant: #5C5344;
+  --color-on-background: #2E2B1A;
+  --color-background: #F2EDD4;
 
-  --color-secondary: #5f5e5e;
-  --color-on-secondary: #ffffff;
-  --color-secondary-container: #e4e2e1;
-  --color-on-secondary-container: #656464;
-  --color-secondary-fixed: #e4e2e1;
-  --color-secondary-fixed-dim: #c8c6c6;
-  --color-on-secondary-fixed: #1b1c1c;
-  --color-on-secondary-fixed-variant: #474747;
+  /* ── Primario — Muro Catedral ── */
+  --color-primary: #C8A96E;
+  --color-on-primary: #2E2B1A;
+  --color-primary-container: #EDD9B0;
+  --color-on-primary-container: #4A3510;
+  --color-primary-fixed: #F5E8C4;
+  --color-primary-fixed-dim: #DFC090;
+  --color-on-primary-fixed: #2E2B1A;
+  --color-on-primary-fixed-variant: #6B4E20;
+  --color-inverse-primary: #DFC090;
 
-  --color-tertiary: #745b00;
-  --color-on-tertiary: #ffffff;
-  --color-tertiary-container: #d5af37;
-  --color-on-tertiary-container: #564300;
-  --color-tertiary-fixed: #ffe08b;
-  --color-tertiary-fixed-dim: #eac249;
-  --color-on-tertiary-fixed: #241a00;
-  --color-on-tertiary-fixed-variant: #584400;
+  /* ── Secundario — Gris Cúpula ── */
+  --color-secondary: #A09483;
+  --color-on-secondary: #F2EDD4;
+  --color-secondary-container: #D8CEBE;
+  --color-on-secondary-container: #3A342C;
+  --color-secondary-fixed: #D8CEBE;
+  --color-secondary-fixed-dim: #BFB3A4;
+  --color-on-secondary-fixed: #2E2B1A;
+  --color-on-secondary-fixed-variant: #5C5344;
+
+  /* ── Terciario — Púrpura Episcopal ── */
+  --color-tertiary: #5C2D7A;
+  --color-on-tertiary: #F2EDD4;
+  --color-tertiary-container: #C49FD8;
+  --color-on-tertiary-container: #2A0A42;
+  --color-tertiary-fixed: #E8D0F4;
+  --color-tertiary-fixed-dim: #C49FD8;
+  --color-on-tertiary-fixed: #F2EDD4;
+  --color-on-tertiary-fixed-variant: #3D1A55;
 
   --color-error: #ba1a1a;
   --color-on-error: #ffffff;
   --color-error-container: #ffdad6;
   --color-on-error-container: #93000a;
 
-  --color-outline: #7f7663;
-  --color-outline-variant: #d0c5af;
-  --color-inverse-surface: #30312e;
-  --color-inverse-on-surface: #f2f0ed;
+  --color-outline: #8A7B68;
+  --color-outline-variant: #C8B89A;
+  --color-inverse-surface: #2E2B1A;
+  --color-inverse-on-surface: #F2EDD4;
 
-  /* Typography */
-  --font-display: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-body: var(--font-inter), "Inter", system-ui, sans-serif;
+  /* ── Tipografía — Cormorant Garamond + Jost ── */
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-body: var(--font-jost), "Jost", system-ui, sans-serif;
 
-  /* Font families (Stitch-compatible names) */
-  --font-headline-md: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-headline-lg: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-headline-lg-mobile: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-display-lg: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-display-lg-mobile: var(--font-playfair), "Playfair Display", Georgia, serif;
-  --font-body-lg: var(--font-inter), "Inter", system-ui, sans-serif;
-  --font-body-md: var(--font-inter), "Inter", system-ui, sans-serif;
-  --font-label-lg: var(--font-inter), "Inter", system-ui, sans-serif;
-  --font-label-sm: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-headline-md: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-headline-lg: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-headline-lg-mobile: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-display-lg: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-display-lg-mobile: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-body-lg: var(--font-jost), "Jost", system-ui, sans-serif;
+  --font-body-md: var(--font-jost), "Jost", system-ui, sans-serif;
+  --font-label-lg: var(--font-jost), "Jost", system-ui, sans-serif;
+  --font-label-sm: var(--font-jost), "Jost", system-ui, sans-serif;
 
   /* Font sizes (size / line-height) */
   --text-display-lg: 3rem;
@@ -153,11 +164,11 @@ body {
    Editorial utilities
    ────────────────────────────────────────────── */
 .scrim-overlay {
-  background: linear-gradient(to bottom, rgba(47,47,47,.2) 0%, rgba(47,47,47,.7) 100%);
+  background: linear-gradient(to bottom, rgba(46,43,26,.2) 0%, rgba(46,43,26,.72) 100%);
 }
 
 .soft-shadow {
-  box-shadow: 0 4px 20px rgba(47,47,47,.05);
+  box-shadow: 0 4px 20px rgba(46,43,26,.06);
 }
 
 /* Timeline — vertical gold rail */
