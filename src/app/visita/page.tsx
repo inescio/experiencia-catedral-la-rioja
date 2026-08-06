@@ -90,8 +90,8 @@ export default function VisitaPage() {
           <div className="w-full h-64 md:h-[530px] rounded-xl overflow-hidden relative soft-shadow group">
             <div className="absolute inset-0 bg-deep-slate/20 group-hover:bg-deep-slate/10 transition-colors duration-700 z-10" />
             <Image
-              src="/CATEDRAL2.jpg"
-              alt="Catedral de La Rioja iluminada de noche durante un evento en la plaza"
+              src="/Imagenes%20catedral/catedral5.png"
+              alt="Fieles reunidos frente a la Catedral de La Rioja iluminada durante una procesión nocturna"
               fill
               priority
               className="object-cover transform scale-100 group-hover:scale-105 transition-transform duration-[20s] ease-out"

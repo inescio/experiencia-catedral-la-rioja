@@ -19,8 +19,8 @@ export default function HomePage() {
       <section className="relative h-screen w-full flex items-end justify-center pb-32">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Image
-            src="/CATEDRAL2.jpg"
-            alt="Catedral de La Rioja iluminada de noche durante un evento en la plaza"
+            src="/Imagenes%20catedral/catedral.png"
+            alt="Fachada de la Catedral de La Rioja iluminada de noche, vista frontal con sus dos torres campanario"
             fill
             priority
             className="object-cover object-center"
@@ -92,9 +92,11 @@ export default function HomePage() {
               Una joya arquitectónica que narra siglos de devoción.
             </h2>
             <p className="text-body-md font-body-md text-on-surface-variant leading-relaxed opacity-80">
-              Descubrí los secretos mejor guardados de la Catedral. Desde sus imponentes
-              campanarios hasta los detalles sutiles de su altar mayor, cada rincón de
-              este recinto sagrado cuenta una historia de resiliencia, arte y fe
+              Levantada tras el terremoto de 1894 bajo la dirección del arquitecto Juan
+              Bautista Arnaldi, la Catedral de La Rioja es hoy Basílica Menor y santuario
+              de San Nicolás de Bari. Desde su fachada de reminiscencias románicas hasta
+              el camarín donde se venera la histórica imagen traída de Perú, cada rincón
+              de este recinto sagrado cuenta una historia de resiliencia, arte y fe
               inquebrantable.
             </p>
             <div className="pt-6">
@@ -117,9 +119,10 @@ export default function HomePage() {
             <div className="absolute -inset-4 border border-outline-variant/50 rounded-xl translate-x-4 translate-y-4 -z-10" />
             <div className="rounded-xl overflow-hidden soft-shadow aspect-[4/5] relative">
               <Image
-                src="/CATEDRAL1.jpg"
-                alt="Fachada de la Catedral de La Rioja durante el día con visitantes en primer plano"
+                src="/Imagenes%20catedral/catedral4.png"
+                alt="Vista aérea de la Catedral de La Rioja al atardecer, con su cúpula y campanarios gemelos sobre la ciudad"
                 fill
+                priority
                 className="object-cover"
               />
             </div>
@@ -148,13 +151,13 @@ export default function HomePage() {
                 href: "/historia",
                 icon: "history_edu",
                 title: "Historia",
-                desc: "Desde 1560 hasta el presente. Siglos de fe, construcción y patrimonio.",
+                desc: "Del terremoto de 1894 a la Basílica Menor: fe, reconstrucción y patrimonio.",
               },
               {
                 href: "/arquitectura",
                 icon: "account_balance",
                 title: "Arquitectura",
-                desc: "Fachada neoclásica, campanarios y detalles en oro que desafían el tiempo.",
+                desc: "Fachada ecléctica, campanarios de 1926 y el camarín de San Nicolás de Bari.",
               },
               {
                 href: "/visita",

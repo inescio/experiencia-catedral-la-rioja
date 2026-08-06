@@ -13,7 +13,7 @@ export const touristAttractionSchema = {
   name: "Catedral Basílica de San Nicolás de Bari de La Rioja",
   alternateName: "Catedral de La Rioja",
   description:
-    "Monumento Histórico Nacional. Catedral neoclásica del siglo XVIII ubicada en el centro histórico de La Rioja, Argentina.",
+    "Basílica Menor y Catedral de San Nicolás de Bari. Templo de estilo ecléctico, con reminiscencias del románico italiano, lo bizantino y lo gótico, reconstruido entre 1899 y 1926 tras el terremoto de 1894, frente a la Plaza 25 de Mayo de La Rioja, Argentina.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://catedralrioja.com.ar",
   image: "/og-image.jpg",
   address: {

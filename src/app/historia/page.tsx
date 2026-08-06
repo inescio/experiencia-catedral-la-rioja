@@ -6,44 +6,44 @@ import FadeInObserver from "@/components/FadeInObserver";
 export const metadata: Metadata = {
   title: "Historia",
   description:
-    "Recorré la línea de tiempo de la Catedral de La Rioja: desde los orígenes coloniales del siglo XVI hasta su declaración como Monumento Histórico Nacional.",
+    "Recorré la línea de tiempo de la Catedral de La Rioja: desde el terremoto de 1894 y la construcción liderada por el arquitecto Juan Bautista Arnaldi hasta su declaración como Basílica Menor en 1955.",
   alternates: { canonical: "/historia" },
   openGraph: {
     title: "Historia | Catedral La Rioja",
     description:
-      "Línea de tiempo: orígenes coloniales, construcción neoclásica y declaración como Monumento Histórico.",
+      "Línea de tiempo: el terremoto de 1894, la reconstrucción de Arnaldi y la declaración como Basílica Menor en 1955.",
     url: "/historia",
   },
 };
 
 const timelineEvents = [
   {
-    period: "1560 – 1580",
-    title: "Orígenes Coloniales",
+    period: "1894",
+    title: "El Terremoto que lo Cambió Todo",
     description:
-      "Los primeros cimientos fueron establecidos por misioneros, utilizando adobe y madera local. Una estructura modesta que sirvió como el primer centro de fe en la región.",
+      "Un violento terremoto arrasa gran parte de la ciudad y destruye la antigua Iglesia Matriz junto con la primitiva capilla de San Nicolás de Bari. Sobre ese mismo solar, frente a la Plaza 25 de Mayo, la comunidad riojana decide levantar un nuevo templo a la altura de su fe.",
     image: {
-      src: "/CATEDRAL3.jpg",
-      alt: "Fachada frontal de la Catedral Basílica de La Rioja durante el día con cielo despejado",
+      src: "/Imagenes%20catedral/Catedral6.png",
+      alt: "Vista de la fachada de la Catedral de La Rioja con cielo despejado durante una celebración religiosa",
     },
     align: "right",
   },
   {
-    period: "1745 – 1812",
-    title: "Construcción del Templo Actual",
+    period: "1899 – 1926",
+    title: "La Piedra Fundamental y la Obra de Arnaldi",
     description:
-      "Bajo la dirección del arquitecto principal, comenzó la edificación monumental en piedra de cantera. La fachada principal y las naves tomaron su forma definitiva de estilo neoclásico.",
+      "En 1899 se bendice la piedra fundamental. Bajo la dirección del arquitecto genovés Juan Bautista Arnaldi, la construcción avanza en un estilo ecléctico que funde reminiscencias del románico italiano con acentos bizantinos y góticos. El templo se inaugura como Santuario el 29 de junio de 1912, aunque la cúpula y los campanarios gemelos recién se completan en 1926.",
     image: {
-      src: "/CATEDRAL4.jpg",
-      alt: "Vista lateral de la cúpula y campanarios de la Catedral de La Rioja",
+      src: "/catedral7.jpg",
+      alt: "Vista nocturna de los campanarios y el frontón de la Catedral de La Rioja, con el reloj y el cartel conmemorativo de aniversario",
     },
     align: "left",
   },
   {
-    period: "1932",
-    title: "Monumento Histórico Nacional",
+    period: "1934 – 1955",
+    title: "De Sede Episcopal a Basílica Menor",
     description:
-      "Reconocida oficialmente por su invaluable patrimonio cultural y arquitectónico, la catedral fue declarada Monumento Histórico Nacional, asegurando su preservación para futuras generaciones.",
+      "El 20 de abril de 1934 el papa Pío XI crea la Diócesis de La Rioja y el templo se convierte en su Catedral. Dos décadas más tarde, el 14 de enero de 1955, el papa Pío XII lo distingue con el título de Basílica Menor, una de las máximas dignidades que puede recibir un templo católico.",
     image: null,
     align: "right",
   },
@@ -54,7 +54,7 @@ const historySchema = {
   "@type": "Article",
   headline: "Historia de la Catedral Basílica de La Rioja",
   description:
-    "Línea de tiempo desde los orígenes coloniales del siglo XVI hasta la declaración como Monumento Histórico Nacional en 1932.",
+    "Línea de tiempo desde el terremoto de 1894 y la reconstrucción dirigida por Juan Bautista Arnaldi hasta la declaración como Basílica Menor en 1955.",
   about: {
     "@type": "LandmarkOrHistoricalBuilding",
     name: "Catedral Basílica de San Nicolás de Bari de La Rioja",

@@ -6,12 +6,12 @@ import FadeInObserver from "@/components/FadeInObserver";
 export const metadata: Metadata = {
   title: "Arquitectura",
   description:
-    "Explorá la arquitectura de la Catedral de La Rioja: fachada neoclásica, campanarios y detalles en oro de su interior. Siglos de maestría constructiva.",
+    "Explorá la arquitectura ecléctica de la Catedral de La Rioja: fachada con reminiscencias del románico italiano, campanarios y cúpula de 1926, y el interior bizantino con el camarín de San Nicolás de Bari.",
   alternates: { canonical: "/arquitectura" },
   openGraph: {
     title: "Arquitectura | Catedral La Rioja",
     description:
-      "Fachada neoclásica, campanarios e interiores con detalles en oro. La maestría arquitectónica de la Catedral.",
+      "Fachada ecléctica, campanarios gemelos e interior bizantino. La maestría arquitectónica de Juan Bautista Arnaldi.",
     url: "/arquitectura",
   },
 };
@@ -20,12 +20,12 @@ const sections = [
   {
     number: "I",
     category: "Exterior",
-    title: "Fachada Neoclásica",
-    body: "La fachada principal se erige como una obra maestra de la sobriedad monumental. Sin ornamentación excesiva, confía en la pura geometría de sus proporciones neoclásicas para imponer presencia. El juego de luz y sombra sobre la robusta mampostería de piedra crea un ritmo visual dinámico que cambia a lo largo del día.",
+    title: "Fachada Ecléctica",
+    body: "Reconstruida tras el terremoto de 1894, la fachada actual fusiona reminiscencias del románico italiano con acentos bizantinos y góticos, un lenguaje ecléctico poco frecuente en el paisaje riojano. Las galerías laterales que flanquean el pórtico central y el juego de luz sobre la mampostería de piedra le dan un ritmo visual propio a lo largo del día.",
     cta: "Explorar detalles estructurales",
     image: {
-      src: "/CATEDRAL3.jpg",
-      alt: "Fachada neoclásica de la Catedral Basílica de La Rioja con cielo azul despejado",
+      src: "/Imagenes%20catedral/catedral3.png",
+      alt: "Vista nocturna del pórtico de entrada de la Catedral de La Rioja con sus columnas monumentales y el interior iluminado al fondo",
       aspect: "aspect-[4/5]",
     },
     layout: "image-left",
@@ -33,25 +33,25 @@ const sections = [
   {
     number: "II",
     category: "Ascenso",
-    title: "El Campanario",
-    body: "Alzándose sobre la ciudad, las torres gemelas de campanario sirven como anclas estructurales y faros espirituales. La mampostería aquí se vuelve más liviana y perforada, permitiendo que el viento pase por los arcos donde residen las campanas de bronce, enmarcando el cielo en elegantes siluetas.",
+    title: "Campanarios y Cúpula",
+    body: "Inaugurado como Santuario en 1912, el templo permaneció con su remate inconcluso hasta 1926, año en que se completaron la cúpula central y los dos campanarios gemelos que hoy dominan el perfil de la ciudad. Dirigidas por el arquitecto genovés Juan Bautista Arnaldi, estas torres se convirtieron en anclas estructurales y faros espirituales para La Rioja.",
     cta: null,
     image: {
-      src: "/CATEDRAL4.jpg",
-      alt: "Vista lateral de la cúpula y campanarios de la Catedral de La Rioja",
+      src: "/Imagenes%20catedral/catedral4.png",
+      alt: "Vista aérea de la Catedral de La Rioja al atardecer, con su cúpula y campanarios gemelos sobre la ciudad",
       aspect: "aspect-square md:aspect-[3/4]",
     },
     layout: "image-right",
   },
   {
     number: "III",
-    category: "Ornamentación",
-    title: "Detalles en Oro",
-    body: "En contraste con el estoico exterior, los acentos interiores utilizan pan de oro para atraer la mirada y reflejar la escasa luz en las naves más profundas. Estas sutiles intervenciones actúan como signos de puntuación dentro del vasto volumen de la catedral, resaltando relieves escultóricos clave y retablos.",
+    category: "Interior",
+    title: "Nave Bizantina y Camarín de San Nicolás",
+    body: "La nave central, de 19 metros de ancho y casi 40 de altura, está decorada con motivos bizantinos y cuatro murales que narran la fundación de La Rioja y sus fiestas religiosas. En el camarín de estilo renacentista se venera la antigua talla en madera de San Nicolás de Bari, traída desde Perú hacia 1640, cuyo rostro oscurecido guarda las marcas de siglos de devoción popular.",
     cta: null,
     image: {
-      src: "/CATEDRAL2.jpg",
-      alt: "Catedral de La Rioja iluminada de noche durante un evento cultural en la plaza",
+      src: "/Imagenes%20catedral/catedral2.png",
+      alt: "Detalle interior en pan de oro de un retablo con la imagen de San Nicolás de Bari en la Catedral de La Rioja",
       aspect: "aspect-[16/9] md:aspect-[4/3]",
     },
     layout: "overlay-card",
@@ -63,7 +63,7 @@ const architectureSchema = {
   "@type": "Article",
   headline: "Arquitectura de la Catedral Basílica de La Rioja",
   description:
-    "Análisis arquitectónico: fachada neoclásica, campanarios e interior dorado de la Catedral de La Rioja, Argentina.",
+    "Análisis arquitectónico: fachada ecléctica con reminiscencias del románico italiano, campanarios y cúpula de 1926, e interior bizantino con el camarín de San Nicolás de Bari.",
   about: {
     "@type": "LandmarkOrHistoricalBuilding",
     name: "Catedral Basílica de San Nicolás de Bari de La Rioja",
@@ -79,8 +79,8 @@ export default function ArquitecturaPage() {
       <section className="relative w-full h-[55vh] md:h-[65vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/CATEDRAL1.jpg"
-            alt="Fachada de la Catedral de La Rioja con visitantes en primer plano"
+            src="/CATEDRAL4G.png"
+            alt="Vista lateral de la Catedral de La Rioja de día, con su cúpula y cielo despejado"
             fill
             priority
             className="object-cover object-center"
