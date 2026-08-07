@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import GeoMap from "@/components/GeoMap";
 import JsonLd from "@/components/JsonLd";
+import TicketPurchaseButton from "@/components/tickets/TicketPurchaseButton";
 
 export const metadata: Metadata = {
   title: "Planificar Visita",
@@ -103,6 +104,24 @@ export default function VisitaPage() {
               <h1 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-display-lg text-antique-white drop-shadow-lg">
                 Visitá la Catedral
               </h1>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Ticket Purchase CTA ── */}
+        <section className="mb-section-gap">
+          <div className="bg-antique-white border border-outline-variant/50 rounded-xl soft-shadow p-8 md:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-center md:text-left">
+            <div>
+              <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-deep-slate mb-2">
+                Reservá tu entrada
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Extranjeros $20.000 · Argentinos $15.000 · Jubilados $12.000 · Niños (10–16) $10.000
+                · Menores de 10 años, gratis.
+              </p>
+            </div>
+            <div className="flex justify-center md:justify-end shrink-0">
+              <TicketPurchaseButton />
             </div>
           </div>
         </section>
